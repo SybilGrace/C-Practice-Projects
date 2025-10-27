@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    //Declare and initialize variables
+    //Declare Variables
     int solution;
     int guess_count;
     int guess;
@@ -14,8 +14,8 @@ int main()
 
     answered = 0;
     guess_count = 0;
-    srand(time(0));
-    solution = rand() % 100 + 1;
+    srand(time(0)); //Set the random seed using the time function
+    solution = rand() % 100 + 1; //Get a number between 0-99 and +1 to it and assign it to the solution variable
 
     while (answered == 0) {
         cout << "Guess a number between 1 and 100: " << endl;
