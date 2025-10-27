@@ -15,7 +15,7 @@ int main()
     answered = 0;
     guess_count = 0;
     srand(time(0));
-    solution = rand() % 100;
+    solution = rand() % 100 + 1;
 
     while (answered == 0) {
         cout << "Guess a number between 1 and 100: " << endl;
